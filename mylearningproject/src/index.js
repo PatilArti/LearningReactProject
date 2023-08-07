@@ -5,10 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const element =React.createElement('h1', { style: { color: "red" } },
+React.createElement('p',{style:{color:"blue"}},'first paragraph'),
+React.createElement('p',{style:{backgroundColor:"pink", color:"yellow"}},'second paragraph'),
+React.createElement('p',{style:{backgroundColor:"yellow"}},'Hello World'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    element
+  // <React.StrictMode>
+  //   <App />
+  
+  // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
